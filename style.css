@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'NexaBold';
+    src:url('webfonts_NexaBold/NexaBold.ttf.woff') format('woff'),
+        url('webfonts_NexaBold/NexaBold.ttf.svg') format('svg'),
+        url('webfonts_NexaBold/NexaBold.ttf.eot'),
+        url('webfonts_NexaBold/NexaBold.ttf.eot') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'NexaBold';
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: white;  
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: black; 
+  height: 100px;
+}
+
+.header__title {
+  color: white;
+  font-size: 24px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: center;
+}
+
+.header__menu ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.header__menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post {
+    width: 100%;
+    height: 800px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 20px;
+    padding: 50px;
+    background: url('image/77777.png');
+    background-size: cover;
+
+    color: white;
+    text-align: center;
+}
+
+.main__title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.main__bottom {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #00183E;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.west {
+  background-color: white;
+  color: #666;  
+  padding: 50px; 
+  border-radius: 10px;
+  width: 80%;
+  max-width: 900px; 
+  margin: 20px auto;
+  text-align: center; 
+}
+.west h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px; 
+}
+
+.west p {
+  font-size: 1.1em; 
+  line-height: 1.6; 
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.h1__gallery{
+  color:#00183E;
+  text-align: left;
+  margin-bottom: 20px;
+  padding-left: 20px;
+   font-size: 2em;
+
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  }
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
