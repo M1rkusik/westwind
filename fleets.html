@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Westwind - Our Fleet</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fleet.css"> 
 </head>
 <body>
 
-    <header>
-        <h1>Westwind Virtual Airline</h1>
-        <nav>
+    <header class="header">
+        <div class="header__title"><img src="image/12321312.png" alt="westwind logo"></div>
+        <nav class="header__menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="fleet.html">Fleet</a></li>
+                <li><a href="#">Routes</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#"></a>Hubs</li>
                 <li><a href="#">Join Us</a></li>
             </ul>
         </nav>
@@ -31,10 +30,13 @@
             <div class="aircraft-card">
                 <div class="aircraft-image">
                     <span class="availability">x58</span>
-                    <img src="image/a350-900.png" alt="Airbus A350-900">
+                    <img src="image/123123123123.png" alt="Airbus A350-900">
                 </div>
                 <h3>Airbus A350-900</h3>
-                <p>253 PAX  303 PAX</p>
+                <div class="pax-capacity">
+                    <span class="pax-label">253 PAX</span>
+                    <span class="pax-label">303 PAX</span>
+                </div>
                 <div class="aircraft-details">
                     <p>Range: 15,372 km</p>
                     <p>Longest Route: LAX-SIN (17:50)</p>
@@ -45,10 +47,12 @@
             <div class="aircraft-card">
                 <div class="aircraft-image">
                     <span class="availability">x7</span>
-                    <img src="image/a350-900ulr.png" alt="Airbus A350-900 ULR">
+                    <img src="image/123123123123.png" alt="Airbus A350-900 ULR">
                 </div>
                 <h3>Airbus A350-900 ULR</h3>
-                <p>161 PAX</p>
+                <div class="pax-capacity">
+                    <span class="pax-label">161 PAX</span>
+                </div>
                 <div class="aircraft-details">
                     <p>Range: 18,000 km</p>
                     <p>Longest Route: JFK-SIN (18:40)</p>
@@ -59,10 +63,12 @@
             <div class="aircraft-card">
                 <div class="aircraft-image">
                     <span class="availability">x12</span>
-                    <img src="image/a380-800.png" alt="Airbus A380-800">
+                    <img src="image/123123123123.png" alt="Airbus A380-800">
                 </div>
                 <h3>Airbus A380-800</h3>
-                <p>471 PAX</p>
+                <div class="pax-capacity">
+                    <span class="pax-label">471 PAX</span>
+                </div>
                 <div class="aircraft-details">
                     <p>Range: 14,800 km</p>
                     <p>Longest Route: SIN-LHR (14:10)</p>
@@ -70,6 +76,7 @@
                 </div>
             </div>
 
+            <!-- Add more aircraft cards here -->
 
         </section>
     </main>
